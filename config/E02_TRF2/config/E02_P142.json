@@ -1,0 +1,28 @@
+﻿{
+  "ied_name": "E02_P142",
+  "ip": "127.0.0.1",
+  "port": 10222,
+  "goose_interface": "4",
+  "protection": {
+    "type": "overcurrent",
+    "i_pickup_a": 800.0,
+    "curve_type": 1,
+    "time_dial": 0.1,
+    "main_fail_timeout_ms": 600,
+    "nominal_v_kv": 86.6,
+    "nominal_i_a": 200.0,
+    "nominal_freq": 50.0
+  },
+  "goose_subscriptions": [
+    {
+      "gocbRef": "E02_P643E02P643/LLN0$GO$gcbTrip",
+      "appId": 4641,
+      "action": "main_trip_status"
+    },
+    {
+      "gocbRef": "E02_BCUE02BCU/LLN0$GO$gcbE02BCU",
+      "appId": 4625,
+      "action": "cb_status_feedback"
+    }
+  ]
+}
